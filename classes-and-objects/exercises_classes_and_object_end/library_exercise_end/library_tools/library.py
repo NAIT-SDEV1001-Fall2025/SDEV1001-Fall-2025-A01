@@ -17,9 +17,3 @@ class Library:
             print("No books in our library")
         for book in self.books:
             print(F"- {book}")
-
-    def checkout_book(self, book):
-        try:
-            self.books.remove(book)
-        except ValueError as error:
-            print(f"Book not available for checkout. {error}")
